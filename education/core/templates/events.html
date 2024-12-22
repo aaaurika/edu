@@ -1,0 +1,214 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="{% static 'img/fav.png' %}">
+    <!-- Author Meta -->
+    <meta name="author" content="colorlib">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Education</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <!--
+    CSS
+    ============================================= -->
+    <link rel="stylesheet" href="{% static 'css/linearicons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+<header id="header" id="home">
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6 col-8 header-top-left no-padding">
+                </div>
+                <div class="col-lg-6 col-sm-6 col-4 header-top-right no-padding">
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'profile' %}"><span class="lnr lnr-phone-handset"></span> <span class="text">{{ user.username }}</span></a>
+                        <a href="{% url 'logout' %}"><span class="lnr lnr-envelope"></span> <span class="text">Выйти</span></a>
+                    {% else %}
+                        <a href="{% url 'login' %}"><span class="lnr lnr-phone-handset"></span> <span class="text">Вход</span></a>
+                        <a href="{% url 'register' %}"><span class="lnr lnr-envelope"></span> <span class="text">Регистрация</span></a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container main-menu">
+        <div class="row align-items-center justify-content-between d-flex">
+            <div id="logo">
+                <a href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt="" title=""/></a>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li><a href="{% url 'index' %}">Главная</a></li>
+                    <li><a href="{% url 'about' %}">О нас </a></li>
+                    <li><a href="{% url 'course_all' %}">Курсы</a>
+                    <li><a href="{% url 'events_all' %}">События</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </div>
+</header><!-- #header -->
+
+<!-- start banner Area -->
+<section class="banner-area relative about-img.jgp " id="home">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <h1 class="text-white">
+                    События
+                </h1>
+                <p class="text-white link-nav"><a href="index.html">Главная </a> <span
+                        class="lnr lnr-arrow-right"></span> <a href="events.html"> События</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End banner Area -->
+
+<!-- Start events-list Area -->
+<section class="events-list-area section-gap event-page-lists">
+    <div class="container">
+        <div class="row align-items-center">
+            {% for event in events %}
+                <div class="col-lg-6 pb-30">
+                    <div class="single-carusel row align-items-center">
+                        <div class="col-12 col-md-6 thumb">
+                            <img class="img-fluid" src="{{ event.image.url }}" alt="">
+                        </div>
+                        <div class="detials col-12 col-md-6">
+                            <p>{{ event.date }}</p>
+                            <a href="{% url 'events_all' %}"><h4>{{ event.title }}</h4></a>
+                            <p>
+                                {{ event.description }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- End events-list Area -->
+
+
+<!-- start footer Area -->
+<footer class="footer-area section-gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h4>Наши курсы</h4>
+                    <ul>
+                        <li><a href="#">Программирование</a></li>
+                        <li><a href="#">Дизайн</a></li>
+                        <li><a href="#">Управление бизнесом</a></li>
+                        <li><a href="#">Искусственный интеллект</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Бренд и материалы</a></li>
+                        <li><a href="#">Инвесторам</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h4>Возможности</h4>
+                    <ul>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Бренд и материалы</a></li>
+                        <li><a href="#">Инвесторам</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h4>Ресурсы</h4>
+                    <ul>
+                        <li><a href="#">Руководства</a></li>
+                        <li><a href="#">Исследования</a></li>
+                        <li><a href="#">Эксперты</a></li>
+                        <li><a href="#">Агентства</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h4>Подписка на новости</h4>
+                    <p>Будьте в курсе последних событий и обновлений</p>
+                    <div class="" id="mc_embed_signup">
+                        <form target="_blank" action="method=get">
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="EMAIL" placeholder="Введите email"
+                                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите email'"
+                                       required="" type="email">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <span class="lnr lnr-arrow-right"></span>
+                                    </button>
+                                </div>
+                                <div class="info"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom row align-items-center justify-content-between">
+
+            <div class="col-lg-6 col-sm-12 footer-social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-behance"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End footer Area -->
+
+
+<script src="{% static 'js/vendor/jquery-2.2.4.min.js' %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+<script src="{% static 'js/easing.min.js' %}"></script>
+<script src="{% static 'js/hoverIntent.js' %}"></script>
+<script src="{% static 'js/superfish.min.js' %}"></script>
+<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/jquery.tabs.min.js' %}"></script>
+<script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/mail-script.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

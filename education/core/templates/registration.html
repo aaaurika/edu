@@ -1,0 +1,144 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #FF5722, #FF9800); /* Dynamic gradient background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            width: 40px; /* Larger logo */
+            margin-top: 10px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .form-container {
+            padding: 30px;
+            border-radius: 15px;
+            background-color: #FFF3E0; /* Light orange background */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input {
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 2px solid #FF9800;
+            border-radius: 8px;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            border-color: #FB8C00;
+            box-shadow: 0 0 5px rgba(251, 140, 0, 0.7);
+        }
+
+        button {
+            padding: 15px;
+            background-color: #FF9800;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1.3em;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #FB8C00; /* Darker shade on hover */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #333;
+        }
+
+        footer a {
+            color: #FF9800;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Добро пожаловать на образовательную платформу!</h1>
+            <img src="{% static 'img/fav.png' %}" alt="Логотип" class="logo"> <!-- Logo -->
+        </header>
+
+        <!-- Registration Form -->
+        <div class="form-container" id="registration">
+            <h2>Регистрация</h2>
+            <p>{{ error }}</p>
+            <form method="POST">
+                {% csrf_token %}
+                <label for="reg-username">Имя пользователя:</label>
+                <input type="text" id="reg-username" name="username" required>
+
+                <label for="reg-email">Email:</label>
+                <input type="email" id="reg-email" name="email" required>
+
+                <label for="reg-password">Пароль:</label>
+                <input type="password" id="reg-password" name="password" required>
+
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Образовательная платформа. Все права защищены. <a href="#">Политика конфиденциальности</a></p>
+        </footer>
+    </div>
+</body>
+</html>

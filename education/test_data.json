@@ -1,0 +1,2084 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2024-11-26T16:52:41.206Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "1",
+      "object_repr": "Основы веб-дизайна",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2024-11-26T16:53:13.766Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "2",
+      "object_repr": "Основы программирования на Python",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2024-11-26T16:53:28.076Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "2",
+      "object_repr": "Основы программирования на Python",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2024-11-26T16:53:53.550Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "3",
+      "object_repr": "Машинное обучение и Data Science",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2024-11-26T16:54:19.214Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "4",
+      "object_repr": "Основы кибербезопасности",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2024-11-26T16:54:51.912Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "5",
+      "object_repr": "Основы управления проектами",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2024-11-26T16:55:58.209Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Бесплатный вводный вебинар по IT-курсам",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2024-11-26T16:57:03.136Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Открытие набора на летнюю программу по программированию",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2024-11-26T16:57:55.238Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Ежегодная встреча выпускников IT-курсов",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2024-11-26T16:58:32.787Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "Бесплатный мастер-класс по веб-разработке",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2024-11-26T16:59:00.138Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "5",
+      "object_repr": "Хакатон для студентов IT-специальностей",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2024-11-26T17:01:32.525Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "2",
+      "object_repr": "dmitry",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2024-11-26T17:01:52.730Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "3",
+      "object_repr": "sergey",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2024-11-26T17:02:19.801Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "4",
+      "object_repr": "nataly",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2024-11-26T17:02:39.646Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "5",
+      "object_repr": "maksim",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2024-11-26T17:03:03.232Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "6",
+      "object_repr": "ekaterina",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2024-11-26T17:03:24.958Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "7",
+      "object_repr": "anna",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2024-11-26T17:03:41.062Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "8",
+      "object_repr": "alex",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2024-11-26T17:05:07.519Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "8",
+      "object_repr": "alex (student)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u043b\\u043d\\u043e\\u0435 \\u0438\\u043c\\u044f\", \"\\u042d\\u043b\\u0435\\u043a\\u0442\\u0440\\u043e\\u043d\\u043d\\u0430\\u044f \\u043f\\u043e\\u0447\\u0442\\u0430\", \"\\u041d\\u043e\\u043c\\u0435\\u0440 \\u0442\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\\u0430\", \"\\u0422\\u0438\\u043f \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2024-11-26T17:06:08.070Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "7",
+      "object_repr": "anna (student)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u043b\\u043d\\u043e\\u0435 \\u0438\\u043c\\u044f\", \"\\u042d\\u043b\\u0435\\u043a\\u0442\\u0440\\u043e\\u043d\\u043d\\u0430\\u044f \\u043f\\u043e\\u0447\\u0442\\u0430\", \"\\u041d\\u043e\\u043c\\u0435\\u0440 \\u0442\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\\u0430\", \"\\u0422\\u0438\\u043f \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2024-11-26T17:06:55.642Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "6",
+      "object_repr": "ekaterina (student)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u043b\\u043d\\u043e\\u0435 \\u0438\\u043c\\u044f\", \"\\u042d\\u043b\\u0435\\u043a\\u0442\\u0440\\u043e\\u043d\\u043d\\u0430\\u044f \\u043f\\u043e\\u0447\\u0442\\u0430\", \"\\u041d\\u043e\\u043c\\u0435\\u0440 \\u0442\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\\u0430\", \"\\u0422\\u0438\\u043f \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2024-11-26T17:09:12.551Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "5",
+      "object_repr": "maksim (student)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u043b\\u043d\\u043e\\u0435 \\u0438\\u043c\\u044f\", \"\\u042d\\u043b\\u0435\\u043a\\u0442\\u0440\\u043e\\u043d\\u043d\\u0430\\u044f \\u043f\\u043e\\u0447\\u0442\\u0430\", \"\\u041d\\u043e\\u043c\\u0435\\u0440 \\u0442\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\\u0430\", \"\\u0422\\u0438\\u043f \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2024-11-26T17:09:51.416Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "4",
+      "object_repr": "nataly (student)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u043b\\u043d\\u043e\\u0435 \\u0438\\u043c\\u044f\", \"\\u042d\\u043b\\u0435\\u043a\\u0442\\u0440\\u043e\\u043d\\u043d\\u0430\\u044f \\u043f\\u043e\\u0447\\u0442\\u0430\", \"\\u041d\\u043e\\u043c\\u0435\\u0440 \\u0442\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\\u0430\", \"\\u0422\\u0438\\u043f \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2024-11-26T17:10:36.215Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "3",
+      "object_repr": "sergey (student)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u043b\\u043d\\u043e\\u0435 \\u0438\\u043c\\u044f\", \"\\u042d\\u043b\\u0435\\u043a\\u0442\\u0440\\u043e\\u043d\\u043d\\u0430\\u044f \\u043f\\u043e\\u0447\\u0442\\u0430\", \"\\u041d\\u043e\\u043c\\u0435\\u0440 \\u0442\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\\u0430\", \"\\u0422\\u0438\\u043f \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2024-11-26T17:11:57.023Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "2",
+      "object_repr": "dmitry (student)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u043b\\u043d\\u043e\\u0435 \\u0438\\u043c\\u044f\", \"\\u042d\\u043b\\u0435\\u043a\\u0442\\u0440\\u043e\\u043d\\u043d\\u0430\\u044f \\u043f\\u043e\\u0447\\u0442\\u0430\", \"\\u041d\\u043e\\u043c\\u0435\\u0440 \\u0442\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\\u0430\", \"\\u0422\\u0438\\u043f \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2024-11-26T17:12:25.733Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "admin (teacher)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u043b\\u043d\\u043e\\u0435 \\u0438\\u043c\\u044f\", \"\\u042d\\u043b\\u0435\\u043a\\u0442\\u0440\\u043e\\u043d\\u043d\\u0430\\u044f \\u043f\\u043e\\u0447\\u0442\\u0430\", \"\\u041d\\u043e\\u043c\\u0435\\u0440 \\u0442\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\\u0430\", \"\\u0422\\u0438\\u043f \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2024-11-26T17:14:14.082Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "1",
+      "object_repr": "Как освоить новую технологию и получить преимущество",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2024-11-26T17:16:09.840Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "2",
+      "object_repr": "Топ 10 навыков, которые нужны в ИТ-сфере",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2024-11-26T17:16:51.962Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "3",
+      "object_repr": "Как найти высокооплачиваемую работу в IT",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+      "action_time": "2024-11-26T17:17:22.605Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "4",
+      "object_repr": "Как стать успешным предпринимателем в IT",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2024-11-26T18:02:21.268Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "anna (student) - 3/5",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2024-11-26T18:03:11.506Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "sergey (student) - 5/5",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+      "action_time": "2024-11-26T18:03:41.928Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "3",
+      "object_repr": "maksim (student) - 5/5",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2024-11-26T18:04:00.431Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "4",
+      "object_repr": "ekaterina (student) - 4/5",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+      "action_time": "2024-11-26T18:04:22.920Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "5",
+      "object_repr": "alex (student) - 5/5",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+      "action_time": "2024-11-26T18:05:09.452Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "6",
+      "object_repr": "dmitry (student) - 5/5",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+      "action_time": "2024-11-26T18:05:34.133Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "7",
+      "object_repr": "nataly (student) - 4/5",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+      "action_time": "2024-11-29T11:31:31.449Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "11",
+      "object_repr": "test2 (student)",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+      "action_time": "2024-11-29T11:31:31.449Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "10",
+      "object_repr": "test ()",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+      "action_time": "2024-11-29T11:31:31.449Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "9",
+      "object_repr": "stepantishhen ()",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+      "action_time": "2024-11-29T11:31:46.242Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "9",
+      "object_repr": "stepantishhen",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+      "action_time": "2024-11-29T11:31:46.242Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "11",
+      "object_repr": "test",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+      "action_time": "2024-11-29T11:31:46.242Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "12",
+      "object_repr": "test2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+      "action_time": "2024-11-29T12:08:22.026Z",
+      "user": 1,
+      "content_type": 3,
+      "object_id": "1",
+      "object_repr": "Учителя",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+      "action_time": "2024-11-29T19:30:59.254Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "1",
+      "object_repr": "Основы МАТАНА для Data Science за 15 МИНУТ // 1 Часть обучающих видео",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+      "action_time": "2024-11-29T19:32:29.859Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "2",
+      "object_repr": "Основы СТАТИСТИКИ для Data Science за 30 МИНУТ // 3 Часть обучающих видео",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+      "action_time": "2024-11-29T19:32:53.103Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "3",
+      "object_repr": "Основы ЛИНАЛА для Data Science за 15 МИНУТ / Векторы матрицы базис",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+      "action_time": "2024-11-29T19:33:11.949Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "4",
+      "object_repr": "Как обучить модель по шагам в Data Science / Урок для начинающих на примере задачи регрессии",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+      "action_time": "2024-11-29T19:33:15.995Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "5",
+      "object_repr": "Как обучить модель по шагам в Data Science / Урок для начинающих на примере задачи регрессии",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+      "action_time": "2024-11-29T19:33:35.989Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "6",
+      "object_repr": "Урок по Docker для Data Science для начинающих MLOps / Курс по Python с нуля",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+      "action_time": "2024-11-29T19:34:12.976Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "7",
+      "object_repr": "Data & Science: машинное обучение в промышленности и банковских услугах. Запись трансляции",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+      "action_time": "2024-11-29T19:34:39.301Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "8",
+      "object_repr": "Урок 6 - Объектно-ориентированное программирование в Python",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+      "action_time": "2024-11-29T19:34:58.358Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "9",
+      "object_repr": "Знакомство с Data Science: создаем свою первую модель машинного обучения",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+      "action_time": "2024-11-29T19:35:15.623Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "4",
+      "object_repr": "Как обучить модель по шагам в Data Science / Урок для начинающих на примере задачи регрессии",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+      "action_time": "2024-11-29T19:53:52.105Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "10",
+      "object_repr": "Трейлер курса веб-дизайна в Figma для детей | Курс веб-дизайна подросткам | Уроки Figma | Курс Figma",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+      "action_time": "2024-11-29T19:54:48.808Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "11",
+      "object_repr": "Основы Figma | Как установить Figma на компьютер | Веб-дизайн для детей | Бесплатные уроки дизайна",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+      "action_time": "2024-11-29T19:55:14.666Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "12",
+      "object_repr": "Интерфейс Figma | Как пользоваться фигмой |",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+      "action_time": "2024-11-29T19:55:35.503Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "13",
+      "object_repr": "Как добавить шрифт в Фигму | Работа с текстом в Figma",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+      "action_time": "2024-11-29T19:56:24.075Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "14",
+      "object_repr": "Работа с формами и объектами в Figma |",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+      "action_time": "2024-11-29T19:56:48.544Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "15",
+      "object_repr": "Как работать с изображениями и иконками в FIGMA |",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+      "action_time": "2024-11-29T19:57:09.403Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "16",
+      "object_repr": "Создание прототипа в Figma | Прототип в Фигме | Веб дизайн",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+      "action_time": "2024-11-29T19:57:51.741Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "17",
+      "object_repr": "Работа с цветом в Figma | Как сделать градиент в Фигме | Обучение работе с Figma | Курс веб дизайна",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+      "action_time": "2024-11-29T19:58:34.813Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "18",
+      "object_repr": "Работа с типографикой в Figma | Сетка в Фигме |",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+      "action_time": "2024-11-29T19:59:04.431Z",
+      "user": 1,
+      "content_type": 13,
+      "object_id": "19",
+      "object_repr": "Экспорт в Фигме | Cовместная работа в Figma |",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+      "action_time": "2024-11-30T15:07:57.622Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "12",
+      "object_repr": "stepantishhen (teacher)",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0422\\u0438\\u043f \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u044f\"]}}]"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add event",
+      "content_type": 7,
+      "codename": "add_event"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change event",
+      "content_type": 7,
+      "codename": "change_event"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete event",
+      "content_type": 7,
+      "codename": "delete_event"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view event",
+      "content_type": 7,
+      "codename": "view_event"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add teacher application",
+      "content_type": 8,
+      "codename": "add_teacherapplication"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change teacher application",
+      "content_type": 8,
+      "codename": "change_teacherapplication"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete teacher application",
+      "content_type": 8,
+      "codename": "delete_teacherapplication"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view teacher application",
+      "content_type": 8,
+      "codename": "view_teacherapplication"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add review",
+      "content_type": 9,
+      "codename": "add_review"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change review",
+      "content_type": 9,
+      "codename": "change_review"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete review",
+      "content_type": 9,
+      "codename": "delete_review"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view review",
+      "content_type": 9,
+      "codename": "view_review"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add profile",
+      "content_type": 10,
+      "codename": "add_profile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change profile",
+      "content_type": 10,
+      "codename": "change_profile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete profile",
+      "content_type": 10,
+      "codename": "delete_profile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view profile",
+      "content_type": 10,
+      "codename": "view_profile"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add course",
+      "content_type": 11,
+      "codename": "add_course"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change course",
+      "content_type": 11,
+      "codename": "change_course"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete course",
+      "content_type": 11,
+      "codename": "delete_course"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view course",
+      "content_type": 11,
+      "codename": "view_course"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can add post",
+      "content_type": 12,
+      "codename": "add_post"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can change post",
+      "content_type": 12,
+      "codename": "change_post"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can delete post",
+      "content_type": 12,
+      "codename": "delete_post"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can view post",
+      "content_type": 12,
+      "codename": "view_post"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+      "name": "Can add webinar",
+      "content_type": 13,
+      "codename": "add_webinar"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+      "name": "Can change webinar",
+      "content_type": 13,
+      "codename": "change_webinar"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+      "name": "Can delete webinar",
+      "content_type": 13,
+      "codename": "delete_webinar"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+      "name": "Can view webinar",
+      "content_type": 13,
+      "codename": "view_webinar"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+      "name": "Can add enrollment",
+      "content_type": 14,
+      "codename": "add_enrollment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+      "name": "Can change enrollment",
+      "content_type": 14,
+      "codename": "change_enrollment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+      "name": "Can delete enrollment",
+      "content_type": 14,
+      "codename": "delete_enrollment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+      "name": "Can view enrollment",
+      "content_type": 14,
+      "codename": "view_enrollment"
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+      "name": "Учителя",
+      "permissions": [
+        44,
+        53,
+        56,
+        25,
+        26,
+        27,
+        28,
+        45,
+        46,
+        47,
+        48,
+        40,
+        36,
+        49,
+        50,
+        51,
+        52
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$870000$NIy8ELm93AYhE7nq17bj5a$qCqLDsHYojl3F9gLy1xdZ8eJEcqMwPTBRXHfp/0bdIU=",
+      "last_login": "2024-11-30T15:08:43.187Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "admin@admin.admin",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-11-26T12:38:37.534Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$870000$XOG8ssm1d2yHWXUWcYmn6i$hRv5P4rpIAOCGaSokuBpwGgF+h+KrmPorI5GIa9leXE=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "dmitry",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-11-26T17:01:32.300Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$870000$ZxFDCaoJVcUnfh5eIgGb2l$yO7DZ2ieD4dc8V+Z1+unPQmusaqvcQ+X3VkK3FE9vvE=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "sergey",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-11-26T17:01:52.512Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$870000$wQoxlhR4jFaypVmUl8Rbuu$4hPrgTpMX5bDbbcTsiUZuAZKL1tfWQP4guhPCfUMR0s=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "nataly",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-11-26T17:02:19.579Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$870000$eQXIb6Dn4ChpiDWrRoeXET$UZ5XGIqGAMdhSsEGnwISvzBZ69dDf+8OaBqu7nEmnqI=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "maksim",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-11-26T17:02:39.428Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$870000$ZbCUkngCiK0zsb2Z3eD95l$xTPyFmHxmHHLV9MnQpcLJcMiNXXwo3G5zRczeUHWSnE=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "ekaterina",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-11-26T17:03:03.004Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$870000$eT1vrpS1MCo30S78PHkJjV$4oFqXl6NdMOf6RpsIsfHmOSBbg+8q9D2W3z808m1d3w=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "anna",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-11-26T17:03:24.742Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 8,
+    "fields": {
+      "password": "pbkdf2_sha256$870000$PW7ylnS0LdwVmaCoCWQV6y$4QNMNOIb5NG5Kjo3QCMice/oCzwvhVFXjgkA8j83iGw=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "alex",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-11-26T17:03:40.848Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "02sxk6no0w7kwbvr2h8dcu0i926g7f06",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQAP-FsyFsCwU8eu83kF0WpGog6eNk_HdD0oNeZybzFgGPvYRjS2tYWFwFiMsvI4zPVLvgB9Z7k7HVfV1I9kSedpNz4_S6ne3foOBW-tYCDQqsGjiPODBYJNKswRtljPaaGcFxhjxRjBwn5xR5bay3ZMcxi88X0Lw3mQ:1tHP5P:KbjCqb9ziFkNtzotPL3yaxpnIUR_GvHcYxszx6V7Pr0",
+      "expire_date": "2024-12-14T15:08:43.191Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "va0nqkhv24i3jn5uwvfisbpebgkadghk",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQAP-FsyFsCwU8eu83kF0WpGog6eNk_HdD0oNeZybzFgGPvYRjS2tYWFwFiMsvI4zPVLvgB9Z7k7HVfV1I9kSedpNz4_S6ne3foOBW-tYCDQqsGjiPODBYJNKswRtljPaaGcFxhjxRjBwn5xR5bay3ZMcxi88X0Lw3mQ:1tHIQ5:NP_jTkjNvP-e2DgZ7qInglbLv4hRPj3BDr9qYG-wwKU",
+      "expire_date": "2024-12-14T08:01:37.695Z"
+    }
+  },
+  {
+    "model": "core.profile",
+    "pk": 1,
+    "fields": {
+      "full_name": "Админ Админов",
+      "user": 1,
+      "email": "admin@admin.admin",
+      "phone_number": "+79192869931",
+      "user_type": "teacher"
+    }
+  },
+  {
+    "model": "core.profile",
+    "pk": 2,
+    "fields": {
+      "full_name": "Дмитрий Новиков",
+      "user": 2,
+      "email": "dmitry@dmitry.dmitry",
+      "phone_number": "+799999999999",
+      "user_type": "student"
+    }
+  },
+  {
+    "model": "core.profile",
+    "pk": 3,
+    "fields": {
+      "full_name": "Сергей Смирнов",
+      "user": 3,
+      "email": "sergey@sergey.sergey",
+      "phone_number": "+799999999999",
+      "user_type": "student"
+    }
+  },
+  {
+    "model": "core.profile",
+    "pk": 4,
+    "fields": {
+      "full_name": "Наталья Федорова",
+      "user": 4,
+      "email": "nataly@nataly.nataly",
+      "phone_number": "+799999999999",
+      "user_type": "student"
+    }
+  },
+  {
+    "model": "core.profile",
+    "pk": 5,
+    "fields": {
+      "full_name": "Максим Орлов",
+      "user": 5,
+      "email": "maksim@maksim.maksim",
+      "phone_number": "+799999999999",
+      "user_type": "student"
+    }
+  },
+  {
+    "model": "core.profile",
+    "pk": 6,
+    "fields": {
+      "full_name": "Екатерина Соколова",
+      "user": 6,
+      "email": "ekaterina@ekaterina.ekaterina",
+      "phone_number": "+799999999999",
+      "user_type": "student"
+    }
+  },
+  {
+    "model": "core.profile",
+    "pk": 7,
+    "fields": {
+      "full_name": "Анна Петрова",
+      "user": 7,
+      "email": "anna@anna.anna",
+      "phone_number": "+799999999999",
+      "user_type": "student"
+    }
+  },
+  {
+    "model": "core.profile",
+    "pk": 8,
+    "fields": {
+      "full_name": "Александр Кузнецов",
+      "user": 8,
+      "email": "alex@alex.alex",
+      "phone_number": "+799999999999",
+      "user_type": "student"
+    }
+  },
+  {
+    "model": "core.course",
+    "pk": 1,
+    "fields": {
+      "image": "courses/p1.jpg",
+      "title": "Основы веб-дизайна",
+      "description": "Этот курс охватывает ключевые принципы и концепции веб-дизайна Студенты научатся создавать функциональные веб-страницы, используя современные инструменты и методы веб-дизайна.",
+      "price": "15000.00"
+    }
+  },
+  {
+    "model": "core.course",
+    "pk": 2,
+    "fields": {
+      "image": "courses/p2.jpg",
+      "title": "Основы программирования на Python",
+      "description": "Курс для начинающих, который знакомит с основами синтаксиса Python, различными типами данных, управляющими конструкциями и функциями.",
+      "price": "15000.00"
+    }
+  },
+  {
+    "model": "core.course",
+    "pk": 3,
+    "fields": {
+      "image": "courses/p3.jpg",
+      "title": "Машинное обучение и Data Science",
+      "description": "Курс, посвященный основам машинного обучения, методам анализа данных, построения моделей и прогнозирования.",
+      "price": "15000.00"
+    }
+  },
+  {
+    "model": "core.course",
+    "pk": 4,
+    "fields": {
+      "image": "courses/p4.jpg",
+      "title": "Основы кибербезопасности",
+      "description": "Курс, посвященный изучению методов защиты информации, обнаружению и предотвращению кибератак.",
+      "price": "15000.00"
+    }
+  },
+  {
+    "model": "core.course",
+    "pk": 5,
+    "fields": {
+      "image": "courses/p5.jpg",
+      "title": "Основы управления проектами",
+      "description": "Курс, обучающий основам проектного управления, планированию, организации и контролю ход выполнения проектов.",
+      "price": "15000.00"
+    }
+  },
+  {
+    "model": "core.enrollment",
+    "pk": 1,
+    "fields": {
+      "profile": 1,
+      "course": 1
+    }
+  },
+  {
+    "model": "core.event",
+    "pk": 1,
+    "fields": {
+      "image": "events/e1.jpg",
+      "date": "2023-09-15",
+      "title": "Бесплатный вводный вебинар по IT-курсам",
+      "description": "Приглашаем всех желающих на бесплатный вебинар, где вы сможете познакомиться с нашими IT-курсами, узнать о карьерных перспективах и задать вопросы экспертам. Дата: 15 сентября 2023 г., время: 19:00 - 20:30."
+    }
+  },
+  {
+    "model": "core.event",
+    "pk": 2,
+    "fields": {
+      "image": "events/e2.jpg",
+      "date": "2023-06-01",
+      "title": "Открытие набора на летнюю программу по программированию",
+      "description": "Спешите записаться на наши летние интенсивные курсы по программированию. Вы сможете за 2 месяца получить практические навыки и сертификат, открывающий двери в мир IT."
+    }
+  },
+  {
+    "model": "core.event",
+    "pk": 3,
+    "fields": {
+      "image": "events/e1_v0Dudva.jpg",
+      "date": "2023-07-01",
+      "title": "Ежегодная встреча выпускников IT-курсов",
+      "description": "Приглашаем всех выпускников наших IT-курсов на ежегодную встречу, где вы сможете обменяться опытом, найти новые возможности для развития и пообщаться с нашими экспертами."
+    }
+  },
+  {
+    "model": "core.event",
+    "pk": 4,
+    "fields": {
+      "image": "events/e2_QmYGIAW.jpg",
+      "date": "2024-04-11",
+      "title": "Бесплатный мастер-класс по веб-разработке",
+      "description": "Хотите научиться создавать современные сайты и приложения? Приходите на наш бесплатный мастер-класс, где вы узнаете основы HTML, CSS и JavaScript от ведущих экспертов."
+    }
+  },
+  {
+    "model": "core.event",
+    "pk": 5,
+    "fields": {
+      "image": "events/e1_7G09T5h.jpg",
+      "date": "2023-01-05",
+      "title": "Хакатон для студентов IT-специальностей",
+      "description": "Приглашаем студентов принять участие в нашем ежегодном хакатоне. Вы сможете получить ценные призы, проявить свои навыки программирования и поработать в командах над интересными проектами."
+    }
+  },
+  {
+    "model": "core.review",
+    "pk": 1,
+    "fields": {
+      "profile": 7,
+      "course": null,
+      "rating": 3,
+      "text": "Потрясающий проект! Интуитивно понятный интерфейс и широкий набор функций значительно упростили\r\n                        мою работу.\r\n                        Команда разработчиков проявила высокий профессионализм и клиентоориентированность. Рекомендую\r\n                        всем!"
+    }
+  },
+  {
+    "model": "core.review",
+    "pk": 2,
+    "fields": {
+      "profile": 3,
+      "course": null,
+      "rating": 5,
+      "text": "Я давно искал подобное решение и наконец-то нашел его!\r\n                        Приложение полностью соответствует моим потребностям и ожиданиям. Легко настраивается и удобно в\r\n                        использовании. Благодарю разработчиков за отличную работу!"
+    }
+  },
+  {
+    "model": "core.review",
+    "pk": 3,
+    "fields": {
+      "profile": 5,
+      "course": null,
+      "rating": 5,
+      "text": "Это лучший продукт, который я когда-либо использовал! Функциональность, юзабилити, техническая\r\n                        поддержка - все на высшем уровне.\r\n                        Разработчики проявили глубокое понимание потребностей пользователей. Я рекомендую этот проект\r\n                        всем!"
+    }
+  },
+  {
+    "model": "core.review",
+    "pk": 4,
+    "fields": {
+      "profile": 6,
+      "course": null,
+      "rating": 4,
+      "text": "Замечательное приложение! Оно значительно повысило эффективность моей работы.\r\n                        Интерфейс интуитивно понятен, а возможности гибко настраиваются под мои задачи. Огромная\r\n                        благодарность команде разработчиков!"
+    }
+  },
+  {
+    "model": "core.review",
+    "pk": 5,
+    "fields": {
+      "profile": 8,
+      "course": null,
+      "rating": 5,
+      "text": "Я давно искал подобное решение и наконец-то нашел его!\r\n                        Это приложение полностью соответствует моим потребностям и ожиданиям. Легко настраивается и\r\n                        удобно в использовании. Благодарю разработчиков за отличную работу!"
+    }
+  },
+  {
+    "model": "core.review",
+    "pk": 6,
+    "fields": {
+      "profile": 2,
+      "course": null,
+      "rating": 5,
+      "text": "Это лучший продукт, который я когда-либо использовал!\r\n                        Функциональность, юзабилити, техническая поддержка - все на высшем уровне.\r\n                        Разработчики проявили глубокое понимание потребностей пользователей. Я рекомендую этот проект\r\n                        всем!"
+    }
+  },
+  {
+    "model": "core.review",
+    "pk": 7,
+    "fields": {
+      "profile": 4,
+      "course": null,
+      "rating": 4,
+      "text": "Замечательное приложение! Оно значительно повысило эффективность моей работы.\r\n                        Интерфейс интуитивно понятен, а возможности гибко настраиваются под мои задачи. Огромная\r\n                        благодарность команде разработчиков!"
+    }
+  },
+  {
+    "model": "core.teacherapplication",
+    "pk": 1,
+    "fields": {
+      "name": "Степан",
+      "email": "stepantishhen@mail.ru",
+      "experience": "23"
+    }
+  },
+  {
+    "model": "core.post",
+    "pk": 1,
+    "fields": {
+      "image": "posts/b1.jpg",
+      "date": "2024-11-26",
+      "author": 1,
+      "title": "Как освоить новую технологию и получить преимущество",
+      "text": "Современные технологии стремительно развиваются, и для успеха в карьере важно постоянно совершенствовать свои навыки. В этой статье мы расскажем, как эффективно осваивать новые технологии."
+    }
+  },
+  {
+    "model": "core.post",
+    "pk": 2,
+    "fields": {
+      "image": "posts/b2.jpg",
+      "date": "2024-11-26",
+      "author": 1,
+      "title": "Топ 10 навыков, которые нужны в ИТ-сфере",
+      "text": "Если вы планируете построить карьеру в ИТ-индустрии, важно развивать правильные навыки. В этой статье мы рассмотрим 10 ключевых компетенций, которые помогут вам преуспеть."
+    }
+  },
+  {
+    "model": "core.post",
+    "pk": 3,
+    "fields": {
+      "image": "posts/b3.jpg",
+      "date": "2024-11-26",
+      "author": 1,
+      "title": "Как найти высокооплачиваемую работу в IT",
+      "text": "Если вы хотите построить успешную карьеру в IT-сфере, важно знать, как правильно искать и получать высокооплачиваемые должности. В этой статье мы расскажем вам об эффективных стратегиях."
+    }
+  },
+  {
+    "model": "core.post",
+    "pk": 4,
+    "fields": {
+      "image": "posts/b4.jpg",
+      "date": "2024-11-26",
+      "author": 1,
+      "title": "Как стать успешным предпринимателем в IT",
+      "text": "Мечтаете открыть собственный IT-бизнес? В этой статье мы поделимся важными советами и рекомендациями, которые помогут вам на пути к успеху."
+    }
+  },
+  {
+    "model": "core.webinar",
+    "pk": 1,
+    "fields": {
+      "video_link": "https://rutube.ru/video/22c01f00c610964b5d996edc32872ef7/?r=plemwd",
+      "title": "Основы МАТАНА для Data Science за 15 МИНУТ // 1 Часть обучающих видео",
+      "description": "",
+      "course": 3
+    }
+  },
+  {
+    "model": "core.webinar",
+    "pk": 2,
+    "fields": {
+      "video_link": "https://rutube.ru/video/387fb94234978cfbe8e20a8e8474c7fc/?r=plemwd",
+      "title": "Основы СТАТИСТИКИ для Data Science за 30 МИНУТ // 3 Часть обучающих видео",
+      "description": "",
+      "course": 3
+    }
+  },
+  {
+    "model": "core.webinar",
+    "pk": 3,
+    "fields": {
+      "video_link": "https://rutube.ru/video/75cdb2eccae6f4a3c27bd1d88ae87cad/?r=plemwd",
+      "title": "Основы ЛИНАЛА для Data Science за 15 МИНУТ / Векторы матрицы базис",
+      "description": "",
+      "course": 3
+    }
+  },
+  {
+    "model": "core.webinar",
+    "pk": 5,
+    "fields": {
+      "video_link": "https://rutube.ru/video/388292df106f49910b3891d3a753b217/?r=plemwd",
+      "title": "Как обучить модель по шагам в Data Science / Урок для начинающих на примере задачи регрессии",
+      "description": "",
+      "course": 3
+    }
+  },
+  {
+    "model": "core.webinar",
+    "pk": 6,
+    "fields": {
+      "video_link": "https://rutube.ru/video/99c31732c8d9a6401a0d7440083ba5ae/?r=plemwd",
+      "title": "Урок по Docker для Data Science для начинающих MLOps / Курс по Python с нуля",
+      "description": "",
+      "course": 3
+    }
+  },
+  {
+    "model": "core.webinar",
+    "pk": 7,
+    "fields": {
+      "video_link": "https://rutube.ru/video/5f46832c8dcb70e1aac35ec3b47017fe/?r=plemwd",
+      "title": "Data & Science: машинное обучение в промышленности и банковских услугах. Запись трансляции",
+      "description": "",
+      "course": 3
+    }
+  },
+  {
+    "model": "core.webinar",
+    "pk": 8,
+    "fields": {
+      "video_link": "https://rutube.ru/video/76f84c624d4c21b5cd6666d29a17323b/?r=plemwd",
+      "title": "Урок 6 - Объектно-ориентированное программирование в Python",
+      "description": "",
+      "course": 3
+    }
+  },
+  {
+    "model": "core.webinar",
+    "pk": 9,
+    "fields": {
+      "video_link": "https://rutube.ru/video/8ed943d32eceb25916b9da377a8dc30d/?r=plemwd",
+      "title": "Знакомство с Data Science: создаем свою первую модель машинного обучения",
+      "description": "",
+      "course": 3
+    }
+  },
+  {
+    "model": "core.webinar",
+    "pk": 10,
+    "fields": {
+      "video_link": "https://rutube.ru/video/707e17745bd98f84e329814f8086cc40/?r=plemwd",
+      "title": "Трейлер курса веб-дизайна в Figma для детей | Курс веб-дизайна подросткам | Уроки Figma | Курс Figma",
+      "description": "",
+      "course": 1
+    }
+  },
+  {
+    "model": "core.webinar",
+    "pk": 11,
+    "fields": {
+      "video_link": "https://rutube.ru/video/da925cbb17f96d76c768f14f9decc2bb/?r=plemwd",
+      "title": "Основы Figma | Как установить Figma на компьютер | Веб-дизайн для детей | Бесплатные уроки дизайна",
+      "description": "Начиная с этого урока мы приступаем к разработке дизайн проекта в программе Figma. За урок мы научимся создавать фреймы, добавлять Grid систему, расставлять объекты и рисовать объекты самостоятельно",
+      "course": 1
+    }
+  },
+  {
+    "model": "core.webinar",
+    "pk": 12,
+    "fields": {
+      "video_link": "https://rutube.ru/video/29e695b43e9f8a5f9fec48519a48625b/?r=plemwd",
+      "title": "Интерфейс Figma | Как пользоваться фигмой |",
+      "description": "За урок мы научимся добавлять различные изображения в проект и поработаем с эффектами для них. Мы научимся выполнять булевые операции над объектами, а также изучим добавление эффектов к разным типам изображений.",
+      "course": 1
+    }
+  },
+  {
+    "model": "core.webinar",
+    "pk": 13,
+    "fields": {
+      "video_link": "https://rutube.ru/video/b85281ea15d0499adef6368904b6e309/?r=plemwd",
+      "title": "Как добавить шрифт в Фигму | Работа с текстом в Figma",
+      "description": "Фигма предоставляет большой набор возможностей для создания текстовых надписей. За урок мы научимся работать с текстом, иконками, а также со слоями в Фигма.",
+      "course": 1
+    }
+  },
+  {
+    "model": "core.webinar",
+    "pk": 14,
+    "fields": {
+      "video_link": "https://rutube.ru/video/5db32e88eb74bb5c55ab893ce4440121/?r=plemwd",
+      "title": "Работа с формами и объектами в Figma |",
+      "description": "В ходе урока мы разработаем секцию с курсами и создадим дизайн для новой страницы приложения. Страницы мы разобьем по разным вкладкам в Figma, а общие объекты скопируем.",
+      "course": 1
+    }
+  },
+  {
+    "model": "core.webinar",
+    "pk": 15,
+    "fields": {
+      "video_link": "https://rutube.ru/video/19a6fb8df84f864e52f205af2a41a50e/?r=plemwd",
+      "title": "Как работать с изображениями и иконками в FIGMA |",
+      "description": "Зачастую в дизайне есть несколько повторяющихся объектов. За урок мы научимся применять технологию компонентов в таких случаях и дополнительно поговорим про методы отправки проекта заказчику.",
+      "course": 1
+    }
+  },
+  {
+    "model": "core.webinar",
+    "pk": 16,
+    "fields": {
+      "video_link": "https://rutube.ru/video/d520507ba0514a137aa7fb43658212e9/?r=plemwd",
+      "title": "Создание прототипа в Figma | Прототип в Фигме | Веб дизайн",
+      "description": "Figma обладает обширным функционалом для работы в команде. За видео мы научимся создавать команды, отправлять ссылки на проект, тестировать проект, а также экспортировать его на ПК.",
+      "course": 1
+    }
+  },
+  {
+    "model": "core.webinar",
+    "pk": 17,
+    "fields": {
+      "video_link": "https://rutube.ru/video/9a47e0b947a882f5b34c78b984a4b200/?r=plemwd",
+      "title": "Работа с цветом в Figma | Как сделать градиент в Фигме | Обучение работе с Figma | Курс веб дизайна",
+      "description": "Курс, обучающий основам проектного управления, планированию, организации и контролю ход выполнения проектов.",
+      "course": 1
+    }
+  },
+  {
+    "model": "core.webinar",
+    "pk": 18,
+    "fields": {
+      "video_link": "https://rutube.ru/video/516423e7d2e2e25df5c36453fbf9b955/?r=plemwd",
+      "title": "Работа с типографикой в Figma | Сетка в Фигме |",
+      "description": "Figma обладает обширным функционалом для работы в команде. За видео мы научимся создавать команды, отправлять ссылки на проект, тестировать проект, а также экспортировать его на ПК.",
+      "course": 1
+    }
+  },
+  {
+    "model": "core.webinar",
+    "pk": 19,
+    "fields": {
+      "video_link": "https://rutube.ru/video/ed3edc03929e88f35794033f2c59eaa6/?r=plemwd",
+      "title": "Экспорт в Фигме | Cовместная работа в Figma |",
+      "description": "Figma обладает обширным функционалом для работы в команде. За видео мы научимся создавать команды, отправлять ссылки на проект, тестировать проект, а также экспортировать его на ПК.",
+      "course": 1
+    }
+  }
+]

@@ -1,0 +1,202 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #FF5722, #FF9800); /* Subtle gradient */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-attachment: fixed;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 850px;
+            margin: auto;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            width: 60px;
+            margin-top: 10px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .form-container {
+            background-color: #fff3e0;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 1.1em;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 2px solid #FF9800;
+            border-radius: 8px;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            border-color: #FB8C00;
+            box-shadow: 0 0 5px rgba(251, 140, 0, 0.7);
+        }
+
+        button {
+            padding: 15px;
+            background-color: #FF9800;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1.3em;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #FB8C00;
+        }
+
+        .course-card {
+            margin-top: 20px;
+        }
+
+        .course-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+        }
+
+        .course-card:hover img {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+
+        .course-card .details {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .course-card h4 {
+            font-size: 1.3em;
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #333;
+        }
+
+        footer a {
+            color: #FF9800;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/linearicons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Привет, {{ user.profile.full_name }}</h1>
+            <img src="{% static 'img/fav.png' %}" alt="Логотип" class="logo">
+        </header>
+
+        <!-- Форма для регистрации -->
+        <div class="form-container" id="registration">
+            <h2>Личные данные</h2>
+            <p>{{ error }}</p>
+            <form method="POST">
+                {% csrf_token %}
+                <label for="full_name">Полное имя</label>
+                <input type="text" id="full_name" name="full_name" value="{{ user.profile.full_name }}" required>
+
+                <label for="reg-email">Email:</label>
+                <input type="email" id="reg-email" name="email" value="{{ user.profile.email }}" required>
+
+                <label for="phone_number">Номер телефона</label>
+                <input type="tel" id="phone_number" name="phone_number" value="{{ user.profile.phone_number }}" required>
+
+                <button type="submit">Обновить</button>
+            </form>
+        </div>
+
+        <h2 class="text-center">Мои курсы</h2>
+        <div class="row">
+            {% for enroll in enroll_courses %}
+                <div class="col-lg-3 col-md-6 course-card">
+                    <div class="thumb-wrap relative">
+                            <div class="thumb relative">
+                                <div class="overlay overlay-bg"></div>
+                                <img class="img-fluid" src="{{ enroll.course.image.url }}" alt="Курс">
+                            </div>
+                    </div>
+                    <div class="details">
+                        <a href="{% url 'course' enroll.course.pk %}">
+                            <h4>{{ enroll.course.title }}</h4>
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Образовательная платформа. Все права защищены. <a href="#">Политика конфиденциальности</a></p>
+        </footer>
+    </div>
+</body>
+</html>

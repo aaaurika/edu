@@ -1,0 +1,469 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="{% static 'img/fav.png' %}">
+    <!-- Author Meta -->
+    <meta name="author" content="colorlib">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>{{ title }}</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/linearicons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<header id="header" id="home">
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6 col-8 header-top-left no-padding">
+
+                </div>
+                <div class="col-lg-6 col-sm-6 col-4 header-top-right no-padding">
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'profile' %}"><span class="lnr lnr-phone-handset"></span> <span class="text">{{ user.username }}</span></a>
+                        <a href="{% url 'logout' %}"><span class="lnr lnr-envelope"></span> <span class="text">Выйти</span></a>
+                    {% else %}
+                        <a href="{% url 'login' %}"><span class="lnr lnr-phone-handset"></span> <span class="text">Вход</span></a>
+                        <a href="{% url 'register' %}"><span class="lnr lnr-envelope"></span> <span class="text">Регистрация</span></a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container main-menu">
+        <div class="row align-items-center justify-content-between d-flex">
+            <div id="logo">
+                <a href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt="" title=""/></a>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li><a href="{% url 'index' %}">Главная</a></li>
+                    <li><a href="{% url 'about' %}">О нас </a></li>
+                    <li><a href="{% url 'course_all' %}">Курсы</a>
+                    <li><a href="{% url 'events_all' %}">События</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </div>
+</header><!-- #header -->
+
+<!-- start banner Area -->
+<section class="banner-area relative " id="home">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row fullscreen d-flex align-items-center justify-content-between">
+            <div class="banner-content col-lg-9 col-md-12">
+                <h1 class="text-uppercase">
+                    Код в твоих руках - лучшая онлайн платформа для новых начинаний
+                </h1>
+                <p class="а pb-10" style="color: white">
+                    Откройте для себя безграничные возможности в сфере ИТ.
+                    На наших курсах "Код в твоих руках" вы получите уникальные навыки,
+                    которые позволят вам стать востребованным специалистом и реализовать свой потенциал.
+                    Начните свое увлекательное путешествие в мир IT-технологий,
+                    где ваши таланты и усердие станут ключом к успеху.
+
+                </p>
+                <a href="#feature-area" class="primary-btn text-uppercase">Начать</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End banner Area -->
+
+<!-- Start feature Area -->
+<section class="feature-area" id="feature-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="single-feature">
+                    <div class="title">
+                        <h4>Изучайте новые технологии</h4>
+                    </div>
+                    <div class="desc-wrap">
+                        <p>
+                            Современные технологии развиваются с огромной скоростью. Наши онлайн-курсы помогут вам
+                            всегда быть в курсе последних тенденций.
+                        </p>
+                        <a href="{% url 'course_all' %}">Присоединяйтесь сейчас</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="single-feature">
+                    <div class="title">
+                        <h4>Лучшие преподаватели</h4>
+                    </div>
+                    <div class="desc-wrap">
+                        <p>
+                            Наша команда состоит из ведущих экспертов в своих областях, которые готовы поделиться своими
+                            знаниями и опытом.
+                        </p>
+                        <a href="{% url 'course_all' %}">Присоединяйтесь сейчас</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="single-feature">
+                    <div class="title">
+                        <h4>Огромный выбор курсов</h4>
+                    </div>
+                    <div class="desc-wrap">
+                        <p>
+                            В нашей библиотеке вы найдете курсы на любой вкус - от программирования до дизайна и
+                            бизнес-стратегии.
+                        </p>
+                        <a href="{% url 'course_all' %}">Присоединяйтесь сейчас</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End feature Area -->
+
+<!-- Start popular-course Area -->
+<section class="popular-course-area section-gap">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-70 col-lg-8">
+                <div class="title text-center">
+                    <h1 class="mb-10">Самые популярные курсы этого года</h1>
+                    <p>Выбери свою профессию мечты </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="active-popular-carusel">
+                {% for course in top_5_courses %}
+                <div class="single-popular-carusel">
+                    <div class="thumb-wrap relative">
+                        <div class="thumb relative">
+                            <div class="overlay overlay-bg"></div>
+                            <img class="img-fluid" src="{{ course.image.url }}" alt="">
+                        </div>
+                        <div class="meta d-flex justify-content-between">
+                            <h4>{{ course.price }} р</h4>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <a href="{% url 'course' course.pk %}">
+                            <h4>
+                                {{ course.title }}
+                            </h4>
+                        </a>
+                        <p>
+                            {{ course.description }}
+                        </p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End popular-course Area -->
+
+
+<!-- Start search-course Area -->
+<section class="search-course-area relative">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-lg-6 col-md-6 search-course-left">
+                <h1 class="text-white">
+                    Начни строить свое <br>
+                    будущее с нами
+                </h1>
+                <p style="color: white">
+                    Откройте для себя безграничные возможности в сфере IT-технологий.
+                    На наших курсах "Код в твоих руках" вы получите уникальные навыки программирования и станете
+                    востребованным специалистом в быстрорастущей индустрии.
+                    Присоединяйтесь к сообществу амбициозных и мотивированных учеников, которые вместе с вами будут шаг
+                    за шагом покорять вершины профессионального мастерства.
+                </p>
+                <div class="row details-content">
+                    <div class="col single-detials">
+                        <span class="lnr lnr-graduation-hat"></span>
+                        <a href="#"><h4>Опытные наставники</h4></a>
+                        <p style="color: white">
+                            Вас будут обучать ведущие эксперты в своей области, которые поделятся с вами практическими
+                            знаниями и помогут развить необходимые навыки.
+                        </p>
+                    </div>
+                    <div class="col single-detials">
+                        <span class="lnr lnr-license"></span>
+                        <a href="#"><h4>Сертификаты</h4></a>
+                        <p style="color: white">
+                            По окончании курсов вы получите официальные сертификаты, подтверждающие ваши достижения и
+                            профессиональную квалификацию.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 search-course-right section-gap">
+                    {% if user.is_authenticated %}
+                        {% include "add_to_course.html" %}
+                    {% else %}
+                        <h4 class="text-white pb-20 text-center mb-30">Запишись на наши курсы</h4>
+                        <p style="color: white">
+                            Зарегистрируйтесь или авторизуйтесь на нашей платформе
+                        </p>
+                        <a class="primary-btn" href="{% url 'register' %}" style="color: white">Зарегистрироваться</a>
+                        <a class="primary-btn" href="{% url 'login' %}" style="color: white">Войти</a>
+                    {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End search-course Area -->
+
+
+<!-- Start upcoming-event Area -->
+<section class="upcoming-event-area section-gap">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-70 col-lg-8">
+                <div class="title text-center">
+                    <h1 class="mb-10">Ближайшие события нашего университета </h1>
+                    <p>Приходи если хочешь познакомиться поближе </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="active-upcoming-event-carusel">
+                {% for event in top_5_events %}
+                <div class="single-carusel row align-items-center">
+                    <div class="col-12 col-md-6 thumb">
+                        <img class="img-fluid" src="{{ event.image.url }}" alt="">
+                    </div>
+                    <div class="detials col-12 col-md-6">
+                        <p>{{ event.date }}</p>
+                        <a href="{% url 'events_all' %}"><h4>{{ event.title }}</h4></a>
+                        <p>
+                            {{ event.description }}
+                        </p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End upcoming-event Area -->
+
+<!-- Start review Area -->
+<section class="review-area section-gap relative">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row">
+            <div class="active-review-carusel">
+                {% for review in top_5_reviews %}
+                <div class="single-review item">
+                    <div class="title justify-content-start d-flex">
+                        <a href="#"><h4>{{ review.profile.full_name }}</h4></a>
+                        <div class="star">
+                            {% for i in "xxxxx" %}
+                                {% with rating=review.rating|default:0 %}
+                                    {% if forloop.counter <= rating %}
+                                        <span class="fa fa-star checked"></span>
+                                    {% else %}
+                                        <span class="fa fa-star"></span>
+                                    {% endif %}
+                                {% endwith %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <p>
+                        {{ review.text }}
+                    </p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End review Area -->
+
+<!-- Start cta-one Area -->
+<section class="cta-one-area relative section-gap">
+    <div class="container">
+        <div class="overlay overlay-bg"></div>
+        <div class="row justify-content-center">
+            <div class="wrap">
+                <h1 class="text-white">Станьте нашим преподавателем</h1>
+                <p style="color: white">
+                    Вы - эксперт в своей области и хотите поделиться своими знаниями и опытом? Присоединяйтесь к нашей
+                    команде преподавателей и помогайте другим расти и развиваться!
+                </p>
+                <a class="primary-btn" data-toggle="modal" data-target="#applicationModal">Подать заявку</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End cta-one Area -->
+<!-- Start Modal -->
+<div id="applicationModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Анкета для преподавателей</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        {% include "teacher_application_form.html" %}
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Modal -->
+
+<!-- Start blog Area -->
+<section class="blog-area section-gap" id="blog">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-70 col-lg-8">
+                <div class="title text-center">
+                    <h1 class="mb-10">Последние статьи с нашего блога</h1>
+                    <p>Следите за новостями и актуальными материалами от наших экспертов.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for post in top_5_posts %}
+            <div class="col-lg-3 col-md-6 single-blog">
+                <div class="thumb">
+                    <img class="img-fluid" src="{{ post.image.url }}" alt="">
+                </div>
+                <p class="meta">{{ post.date }} | Автор {{ post.author.user.username }}</p>
+                <h5>{{ post.title }}</h5>
+                <p>
+                    {{ post.text }}
+                </p>
+                <a href="#" class="details-btn d-flex justify-content-center align-items-center"><span class="details">Подробнее</span><span
+                        class="lnr lnr-arrow-right"></span></a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- End blog Area -->
+
+
+<!-- start footer Area -->
+<footer class="footer-area section-gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h4>Наши курсы</h4>
+                    <ul>
+                        <li><a href="#">Программирование</a></li>
+                        <li><a href="#">Дизайн</a></li>
+                        <li><a href="#">Управление бизнесом</a></li>
+                        <li><a href="#">Искусственный интеллект</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Бренд и материалы</a></li>
+                        <li><a href="#">Инвесторам</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h4>Возможности</h4>
+                    <ul>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Бренд и материалы</a></li>
+                        <li><a href="#">Инвесторам</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h4>Ресурсы</h4>
+                    <ul>
+                        <li><a href="#">Руководства</a></li>
+                        <li><a href="#">Исследования</a></li>
+                        <li><a href="#">Эксперты</a></li>
+                        <li><a href="#">Агентства</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h4>Подписка на новости</h4>
+                    <p>Будьте в курсе последних событий и обновлений</p>
+                    <div class="" id="mc_embed_signup">
+                        <form target="_blank" action="method=get">
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="EMAIL" placeholder="Введите email"
+                                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите email'"
+                                       required="" type="email">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <span class="lnr lnr-arrow-right"></span>
+                                    </button>
+                                </div>
+                                <div class="info"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="{% static 'js/vendor/jquery-2.2.4.min.js' %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' %}"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+<script src="{% static 'js/easing.min.js' %}"></script>
+<script src="{% static 'js/hoverIntent.js' %}"></script>
+<script src="{% static 'js/superfish.min.js' %}"></script>
+<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/jquery.tabs.min.js' %}"></script>
+<script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/mail-script.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

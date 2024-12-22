@@ -1,0 +1,431 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="{% static 'img/fav.png' %}">
+    <!-- Author Meta -->
+    <meta name="author" content="colorlib">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>{{ title }}</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <!--
+    CSS эту ссылку можно убрать
+    ============================================= -->
+    <link rel="stylesheet" href="{% static 'css/linearicons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+<header id="header" id="home">
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6 col-8 header-top-left no-padding">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-4 header-top-right no-padding">
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'profile' %}"><span class="lnr lnr-phone-handset"></span> <span class="text">{{ user.username }}</span></a>
+                        <a href="{% url 'logout' %}"><span class="lnr lnr-envelope"></span> <span class="text">Выйти</span></a>
+                    {% else %}
+                        <a href="{% url 'login' %}"><span class="lnr lnr-phone-handset"></span> <span class="text">Вход</span></a>
+                        <a href="{% url 'register' %}"><span class="lnr lnr-envelope"></span> <span class="text">Регистрация</span></a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container main-menu">
+        <div class="row align-items-center justify-content-between d-flex">
+            <div id="logo">
+                <a href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt="" title=""/></a>
+            </div>
+            <nav id="nav-menu-container">
+               <ul class="nav-menu">
+                    <li><a href="{% url 'index' %}">Главная</a></li>
+                    <li><a href="{% url 'about' %}">О нас </a></li>
+                    <li><a href="{% url 'course_all' %}">Курсы</a>
+                    <li><a href="{% url 'events_all' %}">События</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </div>
+</header><!-- #header -->
+
+<!-- start banner Area -->
+<section class="banner-area relative about-banner" id="home">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <h1 class="text-white">
+                    О нас
+                </h1>
+                <p class="text-white link-nav"><a href="index.html">Главная </a> <span
+                        class="lnr lnr-arrow-right"></span> <a href="about.html"> О нас </a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End banner Area -->
+
+<!-- Start feature Area -->
+<section class="feature-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="single-feature">
+                    <div class="title">
+                        <h4>Изучайте новые технологии</h4>
+                    </div>
+                    <div class="desc-wrap">
+                        <p>
+                            Современные технологии развиваются с огромной скоростью. Наши онлайн-курсы помогут вам
+                            всегда быть в курсе последних тенденций.
+                        </p>
+                        <a href="{% url 'course_all' %}">Присоединяйтесь сейчас</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="single-feature">
+                    <div class="title">
+                        <h4>Лучшие преподаватели</h4>
+                    </div>
+                    <div class="desc-wrap">
+                        <p>
+                            Наша команда состоит из ведущих экспертов в своих областях, которые готовы поделиться своими
+                            знаниями и опытом.
+                        </p>
+                        <a href="{% url 'course_all' %}">Присоединяйтесь сейчас</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="single-feature">
+                    <div class="title">
+                        <h4>Огромный выбор курсов</h4>
+                    </div>
+                    <div class="desc-wrap">
+                        <p>
+                            В нашей библиотеке вы найдете курсы на любой вкус - от программирования до дизайна и
+                            бизнес-стратегии.
+                        </p>
+                        <a href="{% url 'course_all' %}">Присоединяйтесь сейчас</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Start info Area -->
+<section class="info-area pb-120">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-6 no-padding info-area-left">
+                <img class="img-fluid" src="{% static 'img/about-img.jpg' %}" alt="">
+            </div>
+            <div class="col-lg-6 info-area-right">
+                <h1>"Перемены начинаются с твоих рук: "Код в твоих руках"</h1>
+                <p>"Взгляни на свои руки - в них кроется сила изменить свою жизнь. Именно в твоих руках возможность
+                    освоить востребованную профессию разработчика и построить успешную карьеру в мире высоких
+                    технологий.
+                    Курс "Код в твоих руках" - это ваш ключ к новым возможностям. Независимо от того, новичок ты или уже
+                    имеешь опыт, мы поможем тебе раскрыть свой потенциал и стать профессиональным программистом.
+                    Наша онлайн-платформа сочетает в себе теорию, практику и поддержку сообщества.
+                    Шаг за шагом, от основ до углубленных знаний, ты погрузишься в увлекательный мир разработки.
+                    Интерактивные упражнения, проекты для портфолио и менторская поддержка - все это позволит тебе
+                    быстро применить полученные навыки на практике.
+                </p>
+                <br>
+                <p>
+                    Не важно, кем ты сейчас работаешь или чем увлекаешься. Если в твоем сердце горит желание научиться
+                    программировать, "Код в твоих руках" станет твоим пропуском в новую жизнь.
+                    Откройся новым возможностям, и перед тобой распахнутся двери в мир высоких технологий и стабильного
+                    дохода.
+                    Начни свой путь к мечте уже сегодня. Весь код твоего успеха - в твоих собственных руках!"
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End info Area -->
+
+<!-- Start course-mission Area -->
+<section class="course-mission-area pb-120">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-70 col-lg-8">
+                <div class="title text-center">
+                    <h1 class="mb-10">Цели, к которым мы стремимся</h1>
+                    <p>Для тех, кто жаждет овладеть востребованными навыкамиs.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 accordion-left">
+
+                <!-- accordion 2 start-->
+                <dl class="accordion">
+                    <dt>
+                        <a href="">Успех</a>
+                    </dt>
+                    <dd>
+                        Наша миссия - помочь людям всех возрастов и уровней знаний реализовать свой потенциал и открыть
+                        новые горизонты.
+                        Мы стремимся создать уникальную онлайн-платформу, которая сочетает в себе качественное обучение,
+                        практические навыки и поддержку сообщества.
+                    </dd>
+                    <dt>
+                        <a href="">Информация</a>
+                    </dt>
+                    <dd>
+                        Наша команда состоит из опытных экспертов, увлеченных преподавателей и наставников, которые
+                        готовы делиться своими знаниями и помогать ученикам на каждом этапе их обучения.
+                        Мы постоянно совершенствуем наши курсы, чтобы идти в ногу с быстро меняющимися требованиями
+                        рынка
+                    </dd>
+                    <dt>
+                        <a href="">Новые возможноти</a>
+                    </dt>
+                    <dd>
+                        Современный мир требует постоянного развития и приобретения новых компетенций. Присоединяйтесь к
+                        нам, и вместе мы сможем открыть для вас двери в мир захватывающих возможностей, которые изменят
+                        вашу жизнь.
+
+                    </dd>
+                    <dt>
+                        <a href="">Не уверен?</a>
+                    </dt>
+                    <dd>
+                        Мы понимаем, что для многих освоение программирования может казаться непростой задачей.
+                        Однако мы верим, что в каждом человеке есть скрытый потенциал, который нужно раскрыть.
+                        Поэтому мы решительно настроены преодолевать любые барьеры и помогать нашим ученикам достичь их
+                        целей.
+                    </dd>
+                </dl>
+                <!-- accordion 2 end-->
+            </div>
+            <div class="col-md-6 video-right justify-content-center align-items-center d-flex relative">
+                <div class="overlay overlay-bg"></div>
+                <a class="play-btn" href="https://www.youtube.com/watch?v=ARA0AxrnHdM"><img class="img-fluid mx-auto"
+                                                                                            src="{% static 'img/play.png' %}"
+                                                                                            alt=""></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End course-mission Area -->
+
+
+<!-- Start search-course Area -->
+<section class="search-course-area relative">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-lg-6 col-md-6 search-course-left">
+                <h1 class="text-white">
+                    Начни строить свое <br>
+                    будущее с нами
+                </h1>
+                <p>
+                    Откройте для себя безграничные возможности в сфере IT-технологий.
+                    На наших курсах "Код в твоих руках" вы получите уникальные навыки программирования и станете
+                    востребованным специалистом в быстрорастущей индустрии.
+                    Присоединяйтесь к сообществу амбициозных и мотивированных учеников, которые вместе с вами будут шаг
+                    за шагом покорять вершины профессионального мастерства.
+                </p>
+                <div class="row details-content">
+                    <div class="col single-detials">
+                        <span class="lnr lnr-graduation-hat"></span>
+                        <a href="#"><h4>Опытные наставники</h4></a>
+                        <p>
+                            Вас будут обучать ведущие эксперты в своей области, которые поделятся с вами практическими
+                            знаниями и помогут развить необходимые навыки.
+                        </p>
+                    </div>
+                    <div class="col single-detials">
+                        <span class="lnr lnr-license"></span>
+                        <a href="#"><h4>Сертификаты</h4></a>
+                        <p>
+                            По окончании курсов вы получите официальные сертификаты, подтверждающие ваши достижения и
+                            профессиональную квалификацию.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 search-course-right section-gap">
+                <form class="form-wrap" action="#">
+                    <h4 class="text-white pb-20 text-center mb-30">Запишись на наши курсы</h4>
+                    <p style="color: white">
+                        Зарегистрируйтесь или авторизуйтесь на нашей платформе
+                    </p>
+                    <a class="primary-btn" href="{% url 'register' %}" style="color: white">Зарегистрироваться</a>
+                    <a class="primary-btn" href="{% url 'login' %}" style="color: white">Войти</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End search-course Area -->
+<!-- End search-course Area -->
+
+<!-- Start review Area -->
+<section class="review-area section-gap relative">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row">
+            <div class="active-review-carusel">
+                {% for review in top_5_reviews %}
+                <div class="single-review item">
+                    <div class="title justify-content-start d-flex">
+                        <a href="#"><h4>{{ review.profile.full_name }}</h4></a>
+                        <div class="star">
+                            {% for i in "xxxxx" %}
+                                {% with rating=review.rating|default:0 %}
+                                    {% if forloop.counter <= rating %}
+                                        <span class="fa fa-star checked"></span>
+                                    {% else %}
+                                        <span class="fa fa-star"></span>
+                                    {% endif %}
+                                {% endwith %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <p>
+                        {{ review.text }}
+                    </p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End review Area -->
+
+
+<!-- start footer Area -->
+<!-- start footer Area -->
+<footer class="footer-area section-gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h4>Наши курсы</h4>
+                    <ul>
+                        <li><a href="#">Программирование</a></li>
+                        <li><a href="#">Дизайн</a></li>
+                        <li><a href="#">Управление бизнесом</a></li>
+                        <li><a href="#">Искусственный интеллект</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Бренд и материалы</a></li>
+                        <li><a href="#">Инвесторам</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h4>Возможности</h4>
+                    <ul>
+                        <li><a href="#">Вакансии</a></li>
+                        <li><a href="#">Бренд и материалы</a></li>
+                        <li><a href="#">Инвесторам</a></li>
+                        <li><a href="#">Условия использования</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h4>Ресурсы</h4>
+                    <ul>
+                        <li><a href="#">Руководства</a></li>
+                        <li><a href="#">Исследования</a></li>
+                        <li><a href="#">Эксперты</a></li>
+                        <li><a href="#">Агентства</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h4>Подписка на новости</h4>
+                    <p>Будьте в курсе последних событий и обновлений</p>
+                    <div class="" id="mc_embed_signup">
+                        <form target="_blank" action="method=get">
+                            <div class="input-group">
+                                <input type="text" class="form-control" name="EMAIL" placeholder="Введите email"
+                                       onfocus="this.placeholder = ''" onblur="this.placeholder = 'Введите email'"
+                                       required="" type="email">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <span class="lnr lnr-arrow-right"></span>
+                                    </button>
+                                </div>
+                                <div class="info"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom row align-items-center justify-content-between">
+
+            <div class="col-lg-6 col-sm-12 footer-social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-behance"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- End footer Area -->
+
+
+<script src="{% static 'js/vendor/jquery-2.2.4.min.js' %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' %}"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+<script src="{% static 'js/easing.min.js' %}"></script>
+<script src="{% static 'js/hoverIntent.js' %}"></script>
+<script src="{% static 'js/superfish.min.js' %}"></script>
+<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/jquery.tabs.min.js' %}"></script>
+<script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/mail-script.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

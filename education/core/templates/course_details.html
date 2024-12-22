@@ -1,0 +1,145 @@
+{% load rutube_filters %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="{% static 'css/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="colorlib">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>{{ title }}</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <!--
+    CSS
+    ============================================= -->
+    <link rel="stylesheet" href="{% static 'css/linearicons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery-ui.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/video-styles.css' %}">
+
+
+</head>
+<body>
+<header id="header" id="home">
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6 col-8 header-top-left no-padding">
+
+                </div>
+                <div class="col-lg-6 col-sm-6 col-4 header-top-right no-padding">
+                    {% if user.is_authenticated %}
+                    <a href="{% url 'profile' %}"><span class="lnr lnr-phone-handset"></span> <span class="text">{{ user.username }}</span></a>
+                    <a href="{% url 'logout' %}"><span class="lnr lnr-envelope"></span> <span class="text">Выйти</span></a>
+                    {% else %}
+                    <a href="{% url 'login' %}"><span class="lnr lnr-phone-handset"></span> <span
+                            class="text">Вход</span></a>
+                    <a href="{% url 'register' %}"><span class="lnr lnr-envelope"></span> <span
+                            class="text">Регистрация</span></a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container main-menu">
+        <div class="row align-items-center justify-content-between d-flex">
+            <div id="logo">
+                <a href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt="" title=""/></a>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li><a href="{% url 'index' %}">Главная</a></li>
+                    <li><a href="{% url 'about' %}">О нас </a></li>
+                    <li><a href="{% url 'course_all' %}">Курсы</a>
+                    <li><a href="{% url 'events_all' %}">События</a></li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </div>
+</header><!-- #header -->
+
+<!-- start banner Area -->
+<section class="banner-area relative " id="web_dev">
+
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+        <div class="row fullscreen d-flex align-items-center justify-content-between">
+            <div class="banner-content col-lg-9 col-md-12">
+                <h1 class="text-uppercase">
+                    {{ course.title }}
+                </h1>
+                <p>
+                    {{ course.description }}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Start popular-course Area -->
+<section class="popular-course-area section-gap">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-70 col-lg-8">
+                <div class="title text-center">
+                    <h1 class="mb-10">Вебинары</h1>
+                </div>
+            </div>
+        </div>
+        {% for webinar in webinars %}
+        <div class="single-popular-carusel">
+            <div class="thumb-wrap relative">
+                <div class="thumb relative">
+                    <iframe width="1000" height="605"
+                            src="https://rutube.ru/play/embed/{{ webinar.video_link|rutube_id }}/" frameBorder="0"
+                            allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen
+                            allowFullScreen></iframe>
+                </div>
+                <div class="details">
+                    <a href="#">
+                        <h4>{{ webinar.title }}</h4>
+                    </a>
+                    <p>{{ webinar.description }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+
+<script src="{% static 'js/vendor/jquery-2.2.4.min.js' %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="{% static 'js/vendor/bootstrap.min.js' %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+<script src="{% static 'js/easing.min.js' %}"></script>
+<script src="{% static 'js/hoverIntent.js' %}"></script>
+<script src="{% static 'js/superfish.min.js' %}"></script>
+<script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/jquery.tabs.min.js' %}"></script>
+<script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/mail-script.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

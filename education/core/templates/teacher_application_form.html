@@ -1,0 +1,16 @@
+<form method="post" action="{% url 'teacher_application' %}">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="name">Имя</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Электронная почта</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="experience">Опыт работы</label>
+        <textarea class="form-control" id="experience" name="experience" rows="3" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Отправить</button>
+</form>
